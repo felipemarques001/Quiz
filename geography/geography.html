@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="./geography.css">
+    <link href="../fontawesome/css/all.css" rel="stylesheet">
+</head>
+<body onload="criar_questão()">
+    <header>
+        <i class="fas fa-globe"></i>
+        <p>Geografia</p>
+        <p id="num_questões">01/04</p>
+    </header>
+    <section class="pergunta">
+        <p id="pergunta"></p>
+    </section>
+
+    <main>
+        <button id="resposta_a" data-letra="a" onclick="passar_question(), verificar_a()"></button>
+        <button id="resposta_b" data-letra="b" onclick="passar_question(), verificar_b()"></button>
+        <button id="resposta_c" data-letra="c" onclick="passar_question(), verificar_c()"></button>
+        <button id="resposta_d" data-letra="d" onclick="passar_question(), verificar_d()"></button>
+        <button id="resposta_e" data-letra="e" onclick="passar_question(), verificar_e()"></button>
+    </main>
+
+    <footer id="footer">
+        <p id="p_footer">Você acertou 0 de 4 questões sobre geografia!!!</p>
+    </footer>
+
+
+    <script src="./geography.js"></script>
+</body>
+</html>

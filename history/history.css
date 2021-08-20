@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../images/história.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;  
+    font-family: 'Secular One',Arial, Helvetica, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+
+    background-color: #e3be59;
+    color: white;
+
+    padding: 5px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+header i{
+    margin-top: 2px;
+    font-size: 25px;
+}
+.pergunta{
+    background-color: white;
+    color: #726f6f;
+
+    width: 95vw;
+    margin: auto;
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 18px;
+    
+
+    border-radius: 8px;
+    text-align: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+
+    width: 95vw;
+    margin: auto;
+    margin-top: 40px;
+}
+main button{
+    margin-bottom: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 19px;
+
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+    color: #535353;
+}
+
+main button:hover{
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #e3be59;
+}
+
+/* FOOTER */
+footer{
+    background-color: #e3be59;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    font-size: 20px;
+    display: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.display{
+    display: block;
+}
+/* VERSÃO DESKTOP */
+@media(min-width: 900px){
+    .pergunta{
+        font-size: 25px;
+    }
+    main button{
+        font-size: 22px;
+    }
+    main button:hover{
+        font-size: 20px;
+    }
+}

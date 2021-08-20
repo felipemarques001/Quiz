@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: linear-gradient(to bottom, #0d0e2a, #1765ad, #ad484e);
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100vw;
+    font-family: 'Secular One',Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+/* HEADER */
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    text-align: center;
+    margin-top: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+header i{
+    font-size: 25px;
+}
+
+/* MAIN */
+main{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+main section{
+    text-align: center;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 8px;
+    width: 80vw;
+    height: 25vh;
+    margin-left: 10vw;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+main section:hover{
+    font-size: 18px;
+}
+main a{
+    text-decoration: none;
+    color: white;
+}
+main #matemática{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+    url(./images/matemática.jpg);
+    box-shadow: 10px 15px 30px #1C1C1C;
+    background-position: center;
+    background-size: cover;
+}
+main #matemática:hover{
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+    url(./images/matemática.jpg);
+    box-shadow: 10px 15px 30px #1C1C1C;
+    background-position: center;
+    background-size: cover;
+}
+
+main #história{
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+    url(./images/história.jpg);
+    box-shadow: 10px 15px 30px #1C1C1C;
+    background-position: center;
+    background-size: cover;
+}
+main #história:hover{
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), 
+    url(./images/história.jpg);
+    box-shadow: 10px 15px 30px #1C1C1C;
+    background-position: center;
+    background-size: cover;
+}
+
+main #geografia{
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+    url(./images/geografia.jpg);
+    box-shadow: 10px 15px 30px #1C1C1C;
+    background-position: center;
+    background-size: cover;
+}
+main #geografia:hover{
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), 
+    url(./images/geografia.jpg);
+    box-shadow: 10px 15px 30px #1C1C1C;
+    background-position: center;
+    background-size: cover;
+}
+
+main #ciências{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+    url(./images/ciencia_D.jpg);
+    box-shadow: 10px 15px 30px #1C1C1C;
+    background-position: center;
+    background-size: cover;
+}
+main #ciências:hover{
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+    url(./images/ciencia_D.jpg);
+    box-shadow: 10px 15px 30px #1C1C1C;
+    background-position: center;
+    background-size: cover;
+}
+
+main #artes{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+    url(./images/art_d.jpg);
+    box-shadow: 10px 15px 30px #1C1C1C;
+    background-position: center;
+    background-size: cover;
+}
+main #artes:hover{
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+    url(./images/art_d.jpg);
+    box-shadow: 10px 15px 30px #1C1C1C;
+    background-position: center;
+    background-size: cover;
+}
+
+main #cinema{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+    url(./images/cinema_d.jpg);
+    box-shadow: 10px 15px 30px #1C1C1C;
+    background-position: center;
+    background-size: cover;
+}
+main #cinema:hover{
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+    url(./images/cinema_d.jpg);
+    box-shadow: 10px 15px 30px #1C1C1C;
+    background-position: center;
+    background-size: cover;
+}
+
+/* FOOTER */
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+
+
+    width: 100vw;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+footer a{
+    text-decoration: none;
+}
+footer i{
+    color: white;
+} 
+
+
+/* VERSÃO DESKTOP */
+@media(min-width: 900px){
+    main{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    main section{
+        width: 35vw;
+        height: 35vh;
+    }
+    
+    header{
+        font-size: 30px;
+    }
+    header i{
+        font-size: 35px;
+    }
+}
+
